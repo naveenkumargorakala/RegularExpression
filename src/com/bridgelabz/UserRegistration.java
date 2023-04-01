@@ -24,4 +24,14 @@ public class UserRegistration {
             System.out.println("Invalid");
     }
 
+    public void gmail() {
+        Pattern pattern = Pattern.compile("^[a-z0-9]+@[a-z]+.[a-z]+$");
+        System.out.println("Enter gmail:  ");
+        String gmail= input.next();
+        Matcher matcher = pattern.matcher(gmail);
+        if(matcher.matches())
+            System.out.println("gmail is: "+gmail);
+        else
+            System.out.println("Invalid");
+    }
 }
