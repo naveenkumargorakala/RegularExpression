@@ -45,4 +45,16 @@ public class UserRegistration {
         else
             System.out.println("Invalid");
     }
+
+    public void password() {
+        Pattern pattern = Pattern.compile("^[A-Za-z0-9]{8,}");
+        System.out.println("Enter Password: ");
+        String password= input.next();
+        Matcher matcher = pattern.matcher(password);
+        if(matcher.matches()){
+            System.out.println("Password is: "+password);
+        }
+        else
+            System.out.println("Invalid");
+    }
 }

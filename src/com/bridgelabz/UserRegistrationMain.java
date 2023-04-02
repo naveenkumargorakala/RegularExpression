@@ -7,5 +7,7 @@ public class UserRegistrationMain {
         userRegistration.lastName();
         userRegistration.gmail();
         userRegistration.mobile();
+        userRegistration.password();
     }
+
 }
