@@ -6,5 +6,6 @@ public class UserRegistrationMain {
         userRegistration.firstName();
         userRegistration.lastName();
         userRegistration.gmail();
+        userRegistration.mobile();
     }
 }
